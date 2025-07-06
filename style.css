@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f2f2f2, #d0eaff);
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  border: 6px solid #444;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.red {
+  background-color: #d95980;
+}
+.red:hover {
+  background-color: #a83254;
+}
+
+.green {
+  background-color: #63aac0;
+}
+.green:hover {
+  background-color: #417b8d;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+.yellow:hover {
+  background-color: #c67b30;
+}
+
+.purple {
+  background-color: #819ff9;
+}
+.purple:hover {
+  background-color: #5f78c4;
+}
+
+.flash {
+  background-color: white !important;
+  box-shadow: 0 0 20px white;
+}
+.userflash {
+  background-color: #00c853 !important;
+  box-shadow: 0 0 20px #00c853;
+}
+
+body.game-over {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
